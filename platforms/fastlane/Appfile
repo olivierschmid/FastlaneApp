@@ -1,0 +1,11 @@
+app_identifier "ch.mobiliar.FastlaneApp" # The bundle identifier of your app
+package_name "ch.mobiliar.FastlaneApp"
+apple_id "fastlane@quickline.ch" # Your Apple email address
+
+
+team_id "SXX6R46D69"  # Developer Portal Team ID
+json_key_file "/Users/u105791/AppDev/FastlaneApp/platforms/android/fastlane/GooglePlaystore_PK_fastlane.json"
+
+
+# you can even provide different app identifiers, Apple IDs and team names per lane:
+# More information: https://github.com/fastlane/fastlane/blob/master/fastlane/docs/Appfile.md
