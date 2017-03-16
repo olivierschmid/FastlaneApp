@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget android-versionCode="10001001" id="ch.mobiliar.FastlaneApp" ios-CFBundleVersion="1" version="1.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+<widget android-versionCode="10001003" id="ch.mobiliar.FastlaneApp" ios-CFBundleVersion="3" version="1.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
     <feature name="Device">
         <param name="android-package" value="org.apache.cordova.device.Device" />
     </feature>
@@ -22,6 +22,8 @@
     <name>FastlaneApp</name>
     <description>An awesome Ionic/Cordova app.</description>
     <author email="hi@ionicframework" href="http://ionicframework.com/">Ionic Framework Team</author>
+    <hook src="scripts/increment_buildnumbers_sync.js" type="before_prepare" />
+    <hook src="scripts/android_build-extras.js" type="before_prepare" />
     <content src="index.html" />
     <access origin="*" />
     <allow-intent href="http://*/*" />
