@@ -3,6 +3,8 @@
   <name>FastlaneApp</name>
   <description>An awesome Ionic/Cordova app.</description>
   <author email="hi@ionicframework" href="http://ionicframework.com/">Ionic Framework Team</author>
+  <hook src="scripts/increment_buildnumbers_sync.js" type="before_prepare"/>
+  <hook src="scripts/android_build-extras.js" type="before_prepare"/>
   <content src="index.html"/>
   <access origin="*"/>
   <allow-intent href="http://*/*"/>
