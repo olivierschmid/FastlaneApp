@@ -83,7 +83,7 @@ var _ = require('lodash');
 var et = require('elementtree');
 var plist = require('plist');
 
-var rootdir = path.resolve(__dirname, '../../');
+var rootdir = path.resolve(__dirname, '../');
 
 var platformConfig = (function(){
     /*  Global object that defines the available custom preferences for each platform.
