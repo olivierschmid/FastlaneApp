@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<widget id="ch.mobiliar.FastlaneApp" version="1.0.1" android-versionCode="10001004" ios-CFBundleVersion="4" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+<widget id="ch.mobiliar.FastlaneApp" version="1.0.1" android-versionCode="10001008" ios-CFBundleVersion="10" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
   <name>FastlaneApp</name>
   <description>An awesome Ionic/Cordova app.</description>
   <author email="hi@ionicframework" href="http://ionicframework.com/">Ionic Framework Team</author>
   <hook src="scripts/increment_buildnumbers_sync.js" type="before_prepare"/>
   <hook src="scripts/android_build-extras.js" type="before_prepare"/>
+  <hook src="scripts/update_platform_config.js" type="after_prepare"/>
   <content src="index.html"/>
   <access origin="*"/>
   <allow-intent href="http://*/*"/>
@@ -67,6 +68,9 @@
     <splash src="resources/ios/splash/Default-Portrait~ipad.png" width="768" height="1024"/>
     <splash src="resources/ios/splash/Default@2x~iphone.png" width="640" height="960"/>
     <splash src="resources/ios/splash/Default~iphone.png" width="320" height="480"/>
+ 	<config-file platform="ios" target="*-Info.plist" parent="ITSAppUsesNonExemptEncryption">
+ 		<string>false</string>
+ 	</config-file>
   </platform>
   <preference name="webviewbounce" value="false"/>
   <preference name="UIWebViewBounce" value="false"/>
@@ -88,3 +92,4 @@
   <plugin name="cordova-plugin-splashscreen" spec="~4.0.1"/>
   <icon src="resources/android/icon/drawable-xhdpi-icon.png"/>
 </widget>
+
